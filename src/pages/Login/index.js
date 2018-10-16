@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Keyboard,
 } from "react-native";
+import { Actions } from 'react-native-router-flux';
 
 import styles from './style';
 
@@ -30,7 +31,7 @@ export default class Login extends Component {
     });
   }
   handleLoginPress() {
-    alert(`Your email: ${this.state.email}. And your password: ${this.state.password}`);
+    ;
   }
   render() {
     return (
@@ -48,7 +49,7 @@ export default class Login extends Component {
         />
         <TouchableOpacity
           style={{borderWidth: 1, borderColor: 'green', width: 120, height: 60, justifyContent: 'center', alignItems: 'center'}}
-          onPress={() => this.handleLoginPress()}
+          onPress={Actions.home}
         >
           <Text>Login</Text>
         </TouchableOpacity>
