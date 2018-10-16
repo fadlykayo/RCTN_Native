@@ -1,0 +1,3 @@
+rootProject.name = 'rctn_native'
+
+include ':app'
